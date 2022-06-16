@@ -20,6 +20,9 @@ return require('packer').startup(function(use)
     -- Fugitive
     'tpope/vim-fugitive',
 
+    -- Is Like Gitlens
+    'f-person/git-blame.nvim',
+
     -- LSP Config, Installer and AutoCompletion
     -- https://github.com/neovim/nvim-lspconfig/wiki/Installing-language-servers#automatically
     -- https://github.com/neovim/nvim-lspconfig/wiki/Autocompletion
