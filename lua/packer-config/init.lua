@@ -17,6 +17,9 @@ return require('packer').startup(function(use)
       requires = { {'nvim-lua/plenary.nvim', 'nvim-treesitter/nvim-treesitter'} }
     },
 
+    -- Fugitive
+    'tpope/vim-fugitive',
+
     -- LSP Config, Installer and AutoCompletion
     -- https://github.com/neovim/nvim-lspconfig/wiki/Installing-language-servers#automatically
     -- https://github.com/neovim/nvim-lspconfig/wiki/Autocompletion
