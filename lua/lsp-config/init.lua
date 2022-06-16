@@ -47,6 +47,9 @@ end
 -- luasnip setup
 local luasnip = require 'luasnip'
 
+-- lspkind setup
+local lspkind = require 'lspkind'
+
 -- nvim-cmp setup
 local cmp = require 'cmp'
 cmp.setup {
@@ -83,7 +86,26 @@ cmp.setup {
     end, { 'i', 's' }),
   }),
   sources = {
+    { name = 'nvim_lua' },
     { name = 'nvim_lsp' },
     { name = 'luasnip' },
+    { name = 'path' },
+    { name = 'buffer', keyword_length = 5 },
+  },
+  formatting = {
+    format = lspkind.cmp_format {
+      with_text = true,
+      menu = {
+        buffer = '[buf]',
+        nvim_lsp = '[LSP]',
+        nvim_lua = '[api]',
+        path = '[path]',
+        luasnip = '[snip]',
+      },
+    },
+  },
+  experimental = {
+    native_menu = false,
+    ghost_text = true,
   },
 }
