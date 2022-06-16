@@ -39,6 +39,9 @@ return require('packer').startup(function(use)
     'L3MON4D3/LuaSnip', -- Snippets plugin
     'onsails/lspkind-nvim',
 
+    -- AutoFormatting
+    'jose-elias-alvarez/null-ls.nvim',
+
     -- bufferline, show buffer names in tabs
     {'akinsho/bufferline.nvim', tag = "v2.*", requires = 'kyazdani42/nvim-web-devicons'},
 

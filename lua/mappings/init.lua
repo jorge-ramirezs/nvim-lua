@@ -23,6 +23,9 @@ map('n', '<leader>fg', ':Telescope live_grep<CR>', opts)
 map('n', '<leader>fb', ':Telescope buffers<CR>', opts)
 map('n', '<leader>fh', ':Telescope help_tags<CR>', opts)
 
+-- Formmating
+map('n', '<leader>lf', ':lua vim.lsp.buf.formatting()<CR>', opts)
+
 -- Normal --
 -- Better window navigation
 map("n", "<C-h>", "<C-w>h", opts)
