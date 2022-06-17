@@ -1,4 +1,4 @@
-local opts = { noremap=true, silent=true }
+local opts = { noremap = true, silent = true }
 local map = vim.api.nvim_set_keymap
 
 --Remap space as leader key
@@ -15,16 +15,16 @@ vim.g.maplocalleader = " "
 --   command_mode = "c",
 
 -- Nvim-Tree
-map('n', '<C-n>', ':NvimTreeToggle<CR>', opts)
+map("n", "<C-n>", ":NvimTreeToggle<CR>", opts)
 
 -- Telescope
-map('n', '<leader>ff', ':Telescope find_files<CR>', opts)
-map('n', '<leader>fg', ':Telescope live_grep<CR>', opts)
-map('n', '<leader>fb', ':Telescope buffers<CR>', opts)
-map('n', '<leader>fh', ':Telescope help_tags<CR>', opts)
+map("n", "<leader>ff", ":Telescope find_files<CR>", opts)
+map("n", "<leader>fg", ":Telescope live_grep<CR>", opts)
+map("n", "<leader>fb", ":Telescope buffers<CR>", opts)
+map("n", "<leader>fh", ":Telescope help_tags<CR>", opts)
 
 -- Formmating
-map('n', '<leader>lf', ':lua vim.lsp.buf.formatting()<CR>', opts)
+map("n", "<leader>lf", ":lua vim.lsp.buf.formatting()<CR>", opts)
 
 -- Normal --
 -- Better window navigation
@@ -40,8 +40,8 @@ map("n", "<C-Left>", ":vertical resize -2<CR>", opts)
 map("n", "<C-Right>", ":vertical resize +2<CR>", opts)
 
 -- Navigate buffers
-map("n", "<S-l>", ":bnext<CR>", opts)
-map("n", "<S-h>", ":bprevious<CR>", opts)
+map("n", "<leader><Tab>", ":bnext<CR>", opts)
+map("n", "<leader><S-Tab>", ":bprevious<CR>", opts)
 
 -- Move text up and down
 map("n", "<A-j>", "<Esc>:m .+1<CR>==gi", opts)
@@ -67,4 +67,3 @@ map("x", "J", ":move '>+1<CR>gv-gv", opts)
 map("x", "K", ":move '<-2<CR>gv-gv", opts)
 map("x", "<A-j>", ":move '>+1<CR>gv-gv", opts)
 map("x", "<A-k>", ":move '<-2<CR>gv-gv", opts)
-
