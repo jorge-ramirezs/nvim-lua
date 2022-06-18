@@ -61,7 +61,9 @@ return require("packer").startup(function(use)
 		},
 
 		-- Themes
+		"sainnhe/gruvbox-material",
 		"EdenEast/nightfox.nvim",
+		"sainnhe/sonokai",
 	})
 
 	-- Automatically set up your configuration after cloning packer.nvim
