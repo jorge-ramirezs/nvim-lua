@@ -1,7 +1,7 @@
 require("settings")
 require("mappings")
 require("telescope-config")
-require("colorschemes-config.gruvbox-material")
+require("colorschemes-config.nightfox")
 require("nvim-tree-config")
 require("null-ls-config")
 require("lsp-config")
