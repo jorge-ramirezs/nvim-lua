@@ -26,11 +26,11 @@ for _, lsp in ipairs(servers) do
 			vim.keymap.set("n", "gT", vim.lsp.buf.type_definition, { buffer = 0 })
 			vim.keymap.set("n", "gr", vim.lsp.buf.references, { buffer = 0 })
 
-			vim.keymap.set("n", "<leader>dj", vim.diagnostic.goto_next, { buffer = 0 })
-			vim.keymap.set("n", "<leader>dk", vim.diagnostic.goto_prev, { buffer = 0 })
-			vim.keymap.set("n", "<leader>dl", "<cmd>Telescope diagnostics<CR>", { buffer = 0 })
+			vim.keymap.set("n", "<leader>gn", vim.diagnostic.goto_next, { buffer = 0 })
+			vim.keymap.set("n", "<leader>gp", vim.diagnostic.goto_prev, { buffer = 0 })
+			vim.keymap.set("n", "<leader>Td", "<cmd>Telescope diagnostics<CR>", { buffer = 0 })
 			-- rename variables, functions, etc.
-			vim.keymap.set("n", "<leader>r", vim.lsp.buf.rename, { buffer = 0 })
+			vim.keymap.set("n", "<leader>re", vim.lsp.buf.rename, { buffer = 0 })
 		end,
 
 		capabilities = capabilities,

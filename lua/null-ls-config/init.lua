@@ -15,8 +15,9 @@ end
 
 local sources = {
 	null_ls.builtins.code_actions.eslint,
-	null_ls.builtins.formatting.autopep8,
 	null_ls.builtins.formatting.stylua,
+	null_ls.builtins.formatting.autopep8,
+	null_ls.builtins.formatting.djlint,
 	null_ls.builtins.diagnostics.cfn_lint,
 }
 
