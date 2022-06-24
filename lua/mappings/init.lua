@@ -24,9 +24,12 @@ map("n", "<leader>fb", ":Telescope buffers<CR>", opts)
 map("n", "<leader>fh", ":Telescope help_tags<CR>", opts)
 
 -- Formmating
-map("n", "<leader>lf", ":lua vim.lsp.buf.formatting()<CR>", opts)
+-- map("n", "<leader>lf", ":lua vim.lsp.buf.formatting()<CR>", opts)
 
 -- Normal --
+-- Saving the current buffer --
+map("n", "<C-s>", ":write<CR>", opts)
+
 -- Better window navigation
 map("n", "<C-h>", "<C-w>h", opts)
 map("n", "<C-j>", "<C-w>j", opts)
@@ -67,3 +70,6 @@ map("x", "J", ":move '>+1<CR>gv-gv", opts)
 map("x", "K", ":move '<-2<CR>gv-gv", opts)
 map("x", "<A-j>", ":move '>+1<CR>gv-gv", opts)
 map("x", "<A-k>", ":move '<-2<CR>gv-gv", opts)
+
+-- Terminal --
+map("n", "<C-t>", ":split term://zsh<CR>", opts)

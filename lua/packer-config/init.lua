@@ -61,6 +61,7 @@ return require("packer").startup(function(use)
 		},
 
 		-- Themes
+		"folke/tokyonight.nvim",
 		"sainnhe/gruvbox-material",
 		"EdenEast/nightfox.nvim",
 		"sainnhe/sonokai",
