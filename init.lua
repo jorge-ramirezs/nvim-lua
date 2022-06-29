@@ -1,7 +1,6 @@
 require("settings")
 require("mappings")
 require("telescope-config")
--- require("colorschemes-config.nightfox")
 require("colorschemes-config.tokyonight")
 require("nvim-tree-config")
 require("null-ls-config")

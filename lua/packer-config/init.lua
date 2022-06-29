@@ -44,9 +44,13 @@ return require("packer").startup(function(use)
 		"saadparwaiz1/cmp_luasnip", -- Snippets source for nvim-cmp
 		"L3MON4D3/LuaSnip", -- Snippets plugin
 		"onsails/lspkind-nvim",
+		"b0o/schemastore.nvim", -- Schema Store
 
 		-- AutoFormatting
-		"jose-elias-alvarez/null-ls.nvim",
+		-- "jose-elias-alvarez/null-ls.nvim",
+		-- using local for dev
+		"~/projects/nvim_plugins/DeanGaffney/null-ls.nvim",
+		-- "~/projects/nvim_plugins/null-ls.nvim",
 
 		-- NerdComment.nvim
 		"numToStr/Comment.nvim",

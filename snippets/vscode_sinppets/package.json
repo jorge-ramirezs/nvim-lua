@@ -1,0 +1,73 @@
+{
+  "name": "cloudformation-yaml-snippets",
+  "displayName": "CloudFormation Snippets",
+  "description": "This extension adds snippets for all the AWS CloudFormation resources into Visual Studio Code.",
+  "author": "Danny Steenman",
+  "version": "3.66.0",
+  "publisher": "dannysteenman",
+  "icon": "images/cfn-snippets-extension-icon.png",
+  "homepage": "https://towardsthecloud.com",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dannysteenman/vscode-cloudformation-snippets.git"
+  },
+  "engines": {
+    "vscode": "^1.31.0"
+  },
+  "galleryBanner": {
+    "color": "#2B2C33",
+    "theme": "dark"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "keywords": [
+    "aws",
+    "cloudformation",
+    "template",
+    "yaml",
+    "yml"
+  ],
+  "badges": [
+    {
+      "url": "https://vsmarketplacebadge.apphb.com/version/dannysteenman.cloudformation-yaml-snippets.svg",
+      "href": "https://marketplace.visualstudio.com/items?itemName=dannysteenman.cloudformation-yaml-snippets",
+      "description": "Version"
+    },
+    {
+      "url": "https://vsmarketplacebadge.apphb.com/installs-short/dannysteenman.cloudformation-yaml-snippets.svg",
+      "href": "https://marketplace.visualstudio.com/items?itemName=dannysteenman.cloudformation-yaml-snippets",
+      "description": "Installs"
+    },
+    {
+      "url": "https://vsmarketplacebadge.apphb.com/rating-star/dannysteenman.cloudformation-yaml-snippets.svg",
+      "href": "https://marketplace.visualstudio.com/items?itemName=dannysteenman.cloudformation-yaml-snippets",
+      "description": "Ratings"
+    }
+  ],
+  "contributes": {
+    "snippets": [
+      {
+        "language": "yaml",
+        "path": "condition-functions.json"
+      },
+      {
+        "language": "yaml",
+        "path": "custom.json"
+      },
+      {
+        "language": "yaml",
+        "path": "intrinsic-functions.json"
+      },
+      {
+        "language": "yaml",
+        "path": "parameter-types.json"
+      },
+      {
+        "language": "yaml",
+        "path": "resource-types.json"
+      }
+    ]
+  }
+}
