@@ -47,9 +47,9 @@ return require("packer").startup(function(use)
 		"b0o/schemastore.nvim", -- Schema Store
 
 		-- AutoFormatting
-		-- "jose-elias-alvarez/null-ls.nvim",
+		"jose-elias-alvarez/null-ls.nvim",
 		-- using local for dev
-		"~/projects/nvim_plugins/DeanGaffney/null-ls.nvim",
+		-- "~/projects/nvim_plugins/DeanGaffney/null-ls.nvim",
 		-- "~/projects/nvim_plugins/null-ls.nvim",
 
 		-- NerdComment.nvim
