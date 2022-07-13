@@ -26,7 +26,9 @@ set.incsearch = true
 set.hlsearch = false
 set.signcolumn = "yes"
 set.colorcolumn = "80"
-vim.highlight.create("ColorColumn", { ctermbg = 0, guibg = "lightgrey" }, false)
+-- vim.highlight.create("ColorColumn", { ctermbg = 0, guibg = "lightgrey" }, false)
+-- vim.highlight.create is deprecated, use vim.api.nvim_set_hl instead. See :h deprecated
+vim.api.nvim_set_hl(0, "ColorColumn", { ctermbg = 0, bg = "lightgrey" })
 
 set.swapfile = false
 set.backup = false
