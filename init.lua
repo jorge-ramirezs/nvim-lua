@@ -1,7 +1,7 @@
 require("settings")
 require("mappings")
+require("colorschemes-config.sonokai")
 require("telescope-config")
-require("colorschemes-config.tokyonight")
 require("nvim-tree-config")
 require("null-ls-config")
 require("lsp-config")

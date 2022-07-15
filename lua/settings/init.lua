@@ -3,6 +3,7 @@ local set = vim.opt
 set.termguicolors = true
 set.cursorline = true
 set.laststatus = 3
+set.clipboard = "unnamedplus"
 
 set.hidden = true
 -- set.path += '**'
@@ -28,7 +29,11 @@ set.signcolumn = "yes"
 set.colorcolumn = "80"
 -- vim.highlight.create("ColorColumn", { ctermbg = 0, guibg = "lightgrey" }, false)
 -- vim.highlight.create is deprecated, use vim.api.nvim_set_hl instead. See :h deprecated
-vim.api.nvim_set_hl(0, "ColorColumn", { ctermbg = 0, bg = "lightgrey" })
+-- vim.api.nvim_set_hl(0, "ColorColumn", { ctermbg = 0, bg = "lightblue" })
+vim.cmd([[ 
+  highlight Normal guibg=none
+  highlight NonText guibg=none
+]])
 
 set.swapfile = false
 set.backup = false
