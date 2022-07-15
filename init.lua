@@ -1,6 +1,6 @@
 require("settings")
 require("mappings")
-require("colorschemes-config.sonokai")
+require("colorschemes-config.nightfox")
 require("telescope-config")
 require("nvim-tree-config")
 require("null-ls-config")

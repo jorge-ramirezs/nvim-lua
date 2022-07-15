@@ -22,3 +22,8 @@ require("lualine").setup({
 		theme = "gruvbox-material",
 	},
 })
+
+vim.cmd([[ 
+  highlight Normal guibg=none
+  highlight NonText guibg=none
+]])

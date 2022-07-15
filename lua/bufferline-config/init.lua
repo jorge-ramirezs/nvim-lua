@@ -1,6 +1,7 @@
 require("bufferline").setup({
 	options = {
-		separator_style = "slant",
+		numbers = "buffer_id",
+		separator_style = "thin",
 		diagnostics = "nvim_lsp",
 		offsets = {
 			{
