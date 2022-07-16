@@ -64,6 +64,12 @@ return require("packer").startup(function(use)
 			requires = { "kyazdani42/nvim-web-devicons", opt = true },
 		},
 
+		-- SQL plugin
+		{
+			"kristijanhusak/vim-dadbod-ui",
+			requires = "tpope/vim-dadbod",
+		},
+
 		-- Themes
 		"folke/tokyonight.nvim",
 		"sainnhe/gruvbox-material",
