@@ -71,11 +71,21 @@ return require("packer").startup(function(use)
 		},
 		"kristijanhusak/vim-dadbod-completion",
 
+		-- Terminal Toggle
+		{
+			"akinsho/toggleterm.nvim",
+			tag = "v2.*",
+			config = function()
+				require("toggleterm").setup()
+			end,
+		},
+
 		-- Themes
 		"folke/tokyonight.nvim",
 		"sainnhe/gruvbox-material",
 		"EdenEast/nightfox.nvim",
 		"sainnhe/sonokai",
+		"Yazeed1s/minimal.nvim",
 	})
 
 	-- Automatically set up your configuration after cloning packer.nvim

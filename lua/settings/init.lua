@@ -33,6 +33,7 @@ set.colorcolumn = "80"
 vim.cmd([[ 
   highlight Normal guibg=none
   highlight NonText guibg=none
+  highlight NormalFloat guibg=none
 ]])
 
 set.swapfile = false

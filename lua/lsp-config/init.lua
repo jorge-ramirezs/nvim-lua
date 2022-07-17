@@ -201,20 +201,20 @@ cmp.setup({
 	},
 	formatting = {
 		format = lspkind.cmp_format({
-			with_text = true,
+			mode = "symbol_text",
+			-- with_text = true,
 			menu = {
 				nvim_lua = "[api]",
 				nvim_lsp = "[LSP]",
 				luasnip = "[snip]",
-				buffer = "[Buffer]",
+				vim_dadbod_completion = "[DB]",
 				path = "[path]",
-				vim_dadbod_completion = "[SQL]",
-				sqls = "[SQL]",
+				buffer = "[Buffer]",
 			},
 		}),
 	},
-	experimental = {
-		native_menu = false,
-		ghost_text = false,
-	},
+	-- experimental = {
+	-- 	native_menu = false,
+	-- 	ghost_text = false,
+	-- },
 })

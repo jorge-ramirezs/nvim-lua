@@ -72,4 +72,5 @@ map("x", "<A-j>", ":move '>+1<CR>gv-gv", opts)
 map("x", "<A-k>", ":move '<-2<CR>gv-gv", opts)
 
 -- Terminal --
-map("n", "<C-t>", ":split term://zsh<CR>", opts)
+-- map("n", "<C-t>", ":split term://zsh<CR>", opts)
+map("n", "<C-t>", ":ToggleTerm<CR>", opts)
