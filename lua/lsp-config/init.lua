@@ -2,8 +2,6 @@
 local capabilities = vim.lsp.protocol.make_client_capabilities()
 capabilities = require("cmp_nvim_lsp").update_capabilities(capabilities)
 
-local lspconfig = require("lspconfig")
-
 require("nvim-lsp-installer").setup({
 	automatic_installation = true, -- automatically detect which servers to install (based on which servers are set up via lspconfig)
 	ui = {
@@ -14,6 +12,8 @@ require("nvim-lsp-installer").setup({
 		},
 	},
 })
+
+local lspconfig = require("lspconfig")
 
 -- Mappings.
 -- See `:help vim.diagnostic.*` for documentation on any of the below functions
@@ -151,11 +151,10 @@ luasnip.config.set_config({
 	},
 }) --}}}
 
--- lspkind setup
-local lspkind = require("lspkind")
-
 -- nvim-cmp setup
 local cmp = require("cmp")
+-- lspkind setup
+local lspkind = require("lspkind")
 cmp.setup({
 	snippet = {
 		expand = function(args)
@@ -193,18 +192,24 @@ cmp.setup({
 		{ name = "nvim_lua" },
 		{ name = "nvim_lsp" },
 		{ name = "luasnip" },
+		{ name = "vim-dadbod-completion" },
 		{ name = "path" },
 		{ name = "buffer", keyword_length = 5 },
+	},
+	{
+		{ name = "buffer" },
 	},
 	formatting = {
 		format = lspkind.cmp_format({
 			with_text = true,
 			menu = {
-				buffer = "[buf]",
-				nvim_lsp = "[LSP]",
 				nvim_lua = "[api]",
-				path = "[path]",
+				nvim_lsp = "[LSP]",
 				luasnip = "[snip]",
+				buffer = "[Buffer]",
+				path = "[path]",
+				vim_dadbod_completion = "[SQL]",
+				sqls = "[SQL]",
 			},
 		}),
 	},
