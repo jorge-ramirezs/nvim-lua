@@ -207,7 +207,7 @@ cmp.setup({
 				nvim_lua = "[api]",
 				nvim_lsp = "[LSP]",
 				luasnip = "[snip]",
-				vim_dadbod_completion = "[DB]",
+				["vim-dadbod-completion"] = "[DB]",
 				path = "[path]",
 				buffer = "[Buffer]",
 			},
