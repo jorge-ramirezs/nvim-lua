@@ -52,6 +52,9 @@ return require("packer").startup(function(use)
 		-- "~/projects/nvim_plugins/DeanGaffney/null-ls.nvim",
 		-- "~/projects/nvim_plugins/null-ls.nvim",
 
+		-- vim Surround
+		"tpope/vim-surround",
+
 		-- NerdComment.nvim
 		"numToStr/Comment.nvim",
 
