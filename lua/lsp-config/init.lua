@@ -81,6 +81,16 @@ for _, lsp in ipairs(servers) do
 	})
 end
 
+require("lspconfig").gopls.setup({
+	on_attach = on_attach,
+	capabilities = capabilities,
+})
+
+require("lspconfig").golangci_lint_ls.setup({
+	on_attach = on_attach,
+	capabilities = capabilities,
+})
+
 require("lspconfig").yamlls.setup({
 	on_attach = on_attach,
 	capabilities = capabilities,
@@ -189,8 +199,8 @@ cmp.setup({
 		end, { "i", "s" }),
 	}),
 	sources = {
-		{ name = "nvim_lua" },
 		{ name = "nvim_lsp" },
+		{ name = "nvim_lua" },
 		{ name = "luasnip" },
 		{ name = "vim-dadbod-completion" },
 		{ name = "path" },
