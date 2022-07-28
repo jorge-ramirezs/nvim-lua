@@ -30,11 +30,6 @@ set.colorcolumn = "80"
 -- vim.highlight.create("ColorColumn", { ctermbg = 0, guibg = "lightgrey" }, false)
 -- vim.highlight.create is deprecated, use vim.api.nvim_set_hl instead. See :h deprecated
 -- vim.api.nvim_set_hl(0, "ColorColumn", { ctermbg = 0, bg = "lightblue" })
-vim.cmd([[ 
-  highlight Normal guibg=none
-  highlight NonText guibg=none
-  highlight NormalFloat guibg=none
-]])
 
 set.swapfile = false
 set.backup = false

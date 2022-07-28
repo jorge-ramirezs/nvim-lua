@@ -23,6 +23,12 @@ map("n", "<leader>fg", ":Telescope live_grep<CR>", opts)
 map("n", "<leader>fb", ":Telescope buffers<CR>", opts)
 map("n", "<leader>fh", ":Telescope help_tags<CR>", opts)
 
+-- Dadbod Mappings
+map("n", "<leader>du", ":DBUIToggle<CR>", opts)
+map("n", "<leader>df", ":DBUIFindBuffer<CR>", opts)
+map("n", "<leader>dr", ":DBUIRenameBuffer<CR>", opts)
+map("n", "<leader>dl", ":DBUILastQueryInfo<CR>", opts)
+
 -- Formmating
 -- map("n", "<leader>lf", ":lua vim.lsp.buf.formatting()<CR>", opts)
 
