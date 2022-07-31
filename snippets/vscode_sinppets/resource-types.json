@@ -9098,6 +9098,53 @@
         "prefix": "emrcontainers-virtualcluster",
         "scope": "yaml"
     },
+    "AWS::Serverless::Function": {
+        "body": [
+            "${1:LogicalID}:",
+            "  Type: AWS::Serverless::Function",
+            "  Properties:",
+            "    Architectures: List",
+            "    AssumeRolePolicyDocument: JSON",
+            "    AutoPublishAlias: String",
+            "    AutoPublishCodeSha256: String",
+            "    CodeSigningConfigArn: String",
+            "    CodeUri: String | FunctionCode",
+            "    DeadLetterQueue: Map | DeadLetterQueue",
+            "    DeploymentPreference: DeploymentPreference",
+            "    Description: String",
+            "    Environment: Environment",
+            "    EphemeralStorage: EphemeralStorage",
+            "    EventInvokeConfig: EventInvokeConfiguration",
+            "    Events: EventSource",
+            "    FileSystemConfigs: List",
+            "    FunctionName: String",
+            "    FunctionUrlConfig: FunctionUrlConfig",
+            "    Handler: String",
+            "    ImageConfig: ImageConfig",
+            "    ImageUri: String",
+            "    InlineCode: String",
+            "    KmsKeyArn: String",
+            "    Layers: List",
+            "    MemorySize: Integer",
+            "    PackageType: String",
+            "    PermissionsBoundary: String",
+            "    Policies: String | List | Map",
+            "    ProvisionedConcurrencyConfig: ProvisionedConcurrencyConfig",
+            "    ReservedConcurrentExecutions: Integer",
+            "    Role: String",
+            "    Runtime: String",
+            "    Tags: Map",
+            "    Timeout: Integer",
+            "    Tracing: String",
+            "    VersionDescription: String",
+            "    VpcConfig: VpcConfig"
+        ],
+        "description": [
+          "https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/sam-resource-function.html"
+        ],
+        "prefix": "serverless-function",
+        "scope": "yaml"
+    },
     "AWS::EMRServerless::Application": {
         "body": [
             "${1:LogicalID}:",
