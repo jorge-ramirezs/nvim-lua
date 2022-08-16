@@ -81,15 +81,15 @@ for _, lsp in ipairs(servers) do
 	})
 end
 
-require("lspconfig").gopls.setup({
-	on_attach = on_attach,
-	capabilities = capabilities,
-})
-
-require("lspconfig").golangci_lint_ls.setup({
-	on_attach = on_attach,
-	capabilities = capabilities,
-})
+-- require("lspconfig").gopls.setup({
+-- 	on_attach = on_attach,
+-- 	capabilities = capabilities,
+-- })
+--
+-- require("lspconfig").golangci_lint_ls.setup({
+-- 	on_attach = on_attach,
+-- 	capabilities = capabilities,
+-- })
 
 require("lspconfig").yamlls.setup({
 	on_attach = on_attach,
