@@ -83,6 +83,9 @@ return require("packer").startup(function(use)
 			end,
 		},
 
+		-- nvim-notify
+		"rcarriga/nvim-notify",
+
 		-- Themes
 		"folke/tokyonight.nvim",
 		"sainnhe/gruvbox-material",

@@ -1,5 +1,7 @@
 local set = vim.opt
 
+vim.notify = require("notify")
+
 set.termguicolors = true
 set.laststatus = 3
 set.cursorline = true
