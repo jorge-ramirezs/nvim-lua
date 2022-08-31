@@ -85,6 +85,8 @@ require("lspconfig").gopls.setup({
 	on_attach = on_attach,
 	capabilities = capabilities,
 })
+
+require("lspconfig").astro.setup({})
 --
 -- require("lspconfig").golangci_lint_ls.setup({
 -- 	on_attach = on_attach,

@@ -215,6 +215,11 @@ _G.packer_plugins = {
     path = "/Users/jorge/.local/share/nvim/site/pack/packer/start/tokyonight.nvim",
     url = "https://github.com/folke/tokyonight.nvim"
   },
+  ["vim-astro"] = {
+    loaded = true,
+    path = "/Users/jorge/.local/share/nvim/site/pack/packer/start/vim-astro",
+    url = "https://github.com/wuelnerdotexe/vim-astro"
+  },
   ["vim-dadbod"] = {
     loaded = true,
     path = "/Users/jorge/.local/share/nvim/site/pack/packer/start/vim-dadbod",

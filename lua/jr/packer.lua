@@ -86,6 +86,9 @@ return require("packer").startup(function(use)
 		-- nvim-notify
 		"rcarriga/nvim-notify",
 
+		-- vim-astro
+		"wuelnerdotexe/vim-astro",
+
 		-- Themes
 		"folke/tokyonight.nvim",
 		"sainnhe/gruvbox-material",
