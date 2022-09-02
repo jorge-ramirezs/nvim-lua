@@ -24,7 +24,7 @@ vim.keymap.set("n", "[d", vim.diagnostic.goto_prev, opts)
 vim.keymap.set("n", "]d", vim.diagnostic.goto_next, opts)
 
 -- Use an on_attach function to only map the following keys
--- after the language server attaches to the current buffer
+-- after the language server attaches to the current bufferlsm
 local on_attach = function(client, bufnr)
 	-- Enable completion triggered by <c-x><c-o>
 	vim.api.nvim_buf_set_option(bufnr, "omnifunc", "v:lua.vim.lsp.omnifunc")
@@ -86,7 +86,10 @@ require("lspconfig").gopls.setup({
 	capabilities = capabilities,
 })
 
-require("lspconfig").astro.setup({})
+require("lspconfig").astro.setup({
+	on_attach = on_attach,
+	capabilities = capabilities,
+})
 --
 -- require("lspconfig").golangci_lint_ls.setup({
 -- 	on_attach = on_attach,
