@@ -46,7 +46,7 @@ local on_attach = function(client, bufnr)
 	vim.keymap.set("n", "<leader>rn", vim.lsp.buf.rename, bufopts)
 	vim.keymap.set("n", "<leader>ca", vim.lsp.buf.code_action, bufopts)
 	vim.keymap.set("n", "gr", vim.lsp.buf.references, bufopts)
-	vim.keymap.set("n", "<leader>f", vim.lsp.buf.formatting, bufopts)
+	vim.keymap.set("n", "<leader>f", vim.lsp.buf.format, bufopts)
 end
 
 -- Enable some language servers with the additional completion capabilities offered by nvim-cmp
@@ -81,6 +81,11 @@ for _, lsp in ipairs(servers) do
 	})
 end
 
+require("lspconfig").astro.setup({
+	on_attach = on_attach,
+	capabilities = capabilities,
+})
+
 require("lspconfig").gopls.setup({
 	on_attach = on_attach,
 	capabilities = capabilities,
@@ -89,6 +94,22 @@ require("lspconfig").gopls.setup({
 require("lspconfig").golangci_lint_ls.setup({
 	on_attach = on_attach,
 	capabilities = capabilities,
+})
+
+-- Emmet (Expand HTML)
+capabilities.textDocument.completion.completionItem.snippetSupport = true
+lspconfig.emmet_ls.setup({
+	on_attach = on_attach,
+	capabilities = capabilities,
+	filetypes = { "htmldjango", "html", "typescriptreact", "javascriptreact", "css", "sass", "scss", "less" },
+	init_options = {
+		html = {
+			options = {
+				-- For possible options, see: https://github.com/emmetio/emmet/blob/master/src/config.ts#L79-L267
+				["bem.enabled"] = true,
+			},
+		},
+	},
 })
 
 require("lspconfig").yamlls.setup({
