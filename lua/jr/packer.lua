@@ -89,6 +89,9 @@ return require("packer").startup(function(use)
 		-- Astro Treesitter
 		"virchau13/tree-sitter-astro",
 
+		-- vim-astro
+		"wuelnerdotexe/vim-astro",
+
 		-- Themes
 		"folke/tokyonight.nvim",
 		"sainnhe/gruvbox-material",

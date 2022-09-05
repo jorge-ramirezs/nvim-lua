@@ -222,6 +222,11 @@ _G.packer_plugins = {
     path = "/home/jorge/.local/share/nvim/site/pack/packer/start/tree-sitter-astro",
     url = "https://github.com/virchau13/tree-sitter-astro"
   },
+  ["vim-astro"] = {
+    loaded = true,
+    path = "/home/jorge/.local/share/nvim/site/pack/packer/start/vim-astro",
+    url = "https://github.com/wuelnerdotexe/vim-astro"
+  },
   ["vim-dadbod"] = {
     loaded = true,
     path = "/home/jorge/.local/share/nvim/site/pack/packer/start/vim-dadbod",
