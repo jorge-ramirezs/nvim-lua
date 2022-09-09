@@ -95,6 +95,7 @@ return require("packer").startup(function(use)
 		"EdenEast/nightfox.nvim",
 		"sainnhe/sonokai",
 		"Yazeed1s/minimal.nvim",
+		{ "catppuccin/nvim", as = "catppuccin" },
 	})
 
 	-- Automatically set up your configuration after cloning packer.nvim

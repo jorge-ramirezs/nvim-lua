@@ -1,4 +1,4 @@
-require("jr.colorschemes.nightfox")
+require("jr.colorschemes.catpuccin")
 
 vim.cmd([[ 
   highlight Normal guibg=none
