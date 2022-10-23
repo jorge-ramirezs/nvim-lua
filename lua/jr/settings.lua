@@ -38,4 +38,4 @@ set.undodir = vim.fn.stdpath("data") .. "/undodir"
 -- -- let g:loaded_python_provider = 0
 -- -- let g:loaded_python3_provider = 0
 -- let g:python3_host_prog = '/usr/bin/python3'
-vim.g.python3_host_prog = "/home/jorge/.local/share/virtualenvs/nvim-86YW0UDp/bin/python"
+vim.g.python3_host_prog = "/Users/jorge/.local/share/virtualenvs/nvim-bYwXvIDG/bin/python"
