@@ -50,7 +50,7 @@ local on_attach = function(client, bufnr)
 end
 
 -- Enable some language servers with the additional completion capabilities offered by nvim-cmp
-local servers = { "pyright", "sumneko_lua", "emmet_ls", "rust_analyzer" }
+local servers = { "sumneko_lua", "emmet_ls", "rust_analyzer" }
 for _, lsp in ipairs(servers) do
 	lspconfig[lsp].setup({
 
@@ -81,10 +81,15 @@ for _, lsp in ipairs(servers) do
 	})
 end
 
-require("lspconfig").gopls.setup({
+require("lspconfig").pyright.setup({
 	on_attach = on_attach,
 	capabilities = capabilities,
 })
+
+-- require("lspconfig").gopls.setup({
+-- 	on_attach = on_attach,
+-- 	capabilities = capabilities,
+-- })
 
 require("lspconfig").astro.setup({
 	on_attach = on_attach,
