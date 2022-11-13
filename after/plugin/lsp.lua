@@ -189,6 +189,7 @@ luasnip.config.set_config({
 
 -- nvim-cmp setup
 local cmp = require("cmp")
+
 -- lspkind setup
 local lspkind = require("lspkind")
 cmp.setup({
