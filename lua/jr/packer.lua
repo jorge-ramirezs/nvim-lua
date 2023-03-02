@@ -90,7 +90,7 @@ return require("packer").startup(function(use)
 		"wuelnerdotexe/vim-astro",
 
 		-- Themes
-		"folke/tokyonight.nvim",
+		-- "folke/tokyonight.nvim",
 		"sainnhe/gruvbox-material",
 		"EdenEast/nightfox.nvim",
 		"sainnhe/sonokai",

@@ -50,7 +50,7 @@ local on_attach = function(client, bufnr)
 end
 
 -- Enable some language servers with the additional completion capabilities offered by nvim-cmp
-local servers = { "sumneko_lua", "emmet_ls", "rust_analyzer" }
+local servers = { "lua_ls", "emmet_ls", "rust_analyzer" }
 for _, lsp in ipairs(servers) do
 	lspconfig[lsp].setup({
 
